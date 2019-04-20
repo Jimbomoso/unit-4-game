@@ -1,34 +1,39 @@
+.body {
+    background-color: lightgrey
+}
+
 .header {
     padding: 60px;
+    height: 200px;
     text-align: center;
-    background: black;
+    align-content: center;
+    background-image: url("http://capcana.com/news/wp-content/uploads/2016/03/easter-eggs-coloring-pages-1500x844.jpg");
+    background-size: cover;
     color: white; 
 }
 
 .row1 {
-    background-color: yellowgreen;
     display: flex;
-    height: 400px;
+    height: 300px;
     align-items: center;
 }
 
 .leftSide, .rightSide {
     display: flex;
-    flex: 10%;
-    height: 200px;
-    background-color: blue;
-    color: white;
+    flex: 35%;
+    height: 250px;
+    background-color: paleturquoise;
+    color: palevioletred;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     line-height: 1.5em;
-    font-size: 24px;
+    font-size: 44px;
 }
 
 .center {
-    flex: 50%;
-    height: 200px;
-    background: red;
+    flex: 70%;
+    height: 300px;
 }
 
 .instructions {
@@ -37,36 +42,35 @@
     align-content: center;
     flex-direction: column;
     background: white;
-    /* height: 250px; */
     line-height: 1.5em;
+    height: 300px;
 }
 
 .scores {
     display: flex;
-    height: 150px;
+    height: 100px;
     flex-direction: row;
     justify-content: space-evenly;
-    align-content: center;
-} 
-
-/* .crystalDisplay {
-    display: flex;
     align-items: center;
-} */
+    font-size: 24px;
+    background-color: palevioletred;
+    padding: 10px;
+    margin: 10px;
+} 
 
 .crystals {
     display: flex;
-    height: 100px;
-    justify-content: space-around;
-    border: 2px solid green;
+    height: 125px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .crystal {
     display: flex;
-    height: 100px;
-    width: 100px;
-    background: yellow;
-    justify-content: space-around; 
+    height: 125px;
+    width: 125px;
+    justify-content: center; 
+    align-items: center;
     
 }
 
@@ -84,4 +88,4 @@ h2 {
 
 h3 {
     font-size: 30px;
-} */ 
+} 

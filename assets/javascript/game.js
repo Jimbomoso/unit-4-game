@@ -11,7 +11,12 @@ const replay = function () {
     //resets crystals & user score    
     $(".crystals").empty();
 
-    // let images = ["","","",""];
+    let images = [
+            "https://natashaskitchen.com/wp-content/uploads/2017/04/Easter-Egg-Chicks-5.jpg", 
+            "https://d1doqjmisr497k.cloudfront.net/-/media/mccormick-us/recipes/mccormick/p/2000/polka-dot-easter-eggs.ashx?vd=20180710T033521Z&hash=7CD8A06C15D02AB66A73A4B193B5D8C316C23D36",
+            "https://www.aftcra.com/uploads/cache/products/i/l/il_fullxfull_766362331_463g_2015_05_15_21_45_53_2112555485_111843_181851_579x.jpg",
+            "https://www.thorntons.co.uk/dw/image/v2/BBKV_PRD/on/demandware.static/-/Sites-thorntons-live-products/default/dwa8a7dfe9/product-images/2019-2020/Spring-S2/New-Easter-Images/77180442-NutPraline-Egg-Iced.jpg?sw=1350&sh=1000&sm=fit"
+        ];
 
     //generates a random number between 19 and 120 for targetScore
     randomTargetScore = Math.floor(Math.random() * 120) + 19;
@@ -33,6 +38,10 @@ const replay = function () {
             crystal.attr({
                 "class": "crystal",
                 "dataRandom": crystalVal
+            });
+            crystal.css({
+                "background-image":"url('" + images[i] + "')",
+                "background-size":"cover"
             });
 
         //replace crystals element with crystal
