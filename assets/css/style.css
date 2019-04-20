@@ -1,0 +1,84 @@
+.header {
+    padding: 60px;
+    text-align: center;
+    background: black;
+    color: white; 
+}
+
+.row1 {
+    background-color: yellowgreen;
+    display: flex;
+    height: 400px;
+    align-items: center;
+}
+
+.leftSide {
+    display: flex;
+    flex: 10%;
+    height: 200px;
+    background-color: blue;
+}
+
+.center {
+    flex: 50%;
+    height: 200px;
+    background: red;
+}
+
+.rightSide {
+    display: flex;
+    flex: 10%;
+    height: 200px;
+    background: blue;
+}
+
+.instructions {
+    text-align: center;
+    background: white;
+    height: 200px;
+    align-items: center;
+}
+
+.scores {
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+} 
+
+/* .crystalDisplay {
+    display: flex;
+    align-items: center;
+} */
+
+.crystals {
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    border: 2px solid green;
+}
+
+.crystal {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background: yellow;
+    justify-content: space-around; 
+    
+}
+
+p {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+} */ 

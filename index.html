@@ -2,59 +2,68 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Crystal Collector Game</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="title">
-                <h1> Crystal collector game!</h1>
-            </div>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collector Game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1> Crystal Cointainer Game! </h1>
+    </div>
+
+    <div class="row1">
+        <div class="leftSide">
+            <div> Wins</div>
+            <div class="wins"></div>
+        </div>
+        
+        <div class="center">
             <div class="instructions">
-                <p> 
-                    <h2>Instructions</h2> 
-                    <p> 
-                        The goal of this game is to reach the target score without going over it. 
-                        <br>
-                        Clicking a crystal will add points to your score.
-                        <br>
-                        Each crystal is worth a different amount of points.
-                        <br>
-                        Each game the value of each crystal changes.
-                        <br>
-                        Get your score to equal the target score and you win, go over the target score and you lose.
-                    </p>
-                </p>
+                <h1>Instructions:</h1>
+                <div>The goal of this game is to reach the target score without going over it.</div>
+                <div>Clicking a crystal will add points to your score.</div>
+                <div>Each crystal is worth a different amount of points.</div>
+                <div>Each game the value of each crystal changes.</div>
+                <div>Get your score to equal the target score and you win.</div>
+                <div>Go over the target score and you lose.</div>
             </div>
-            <div class="targetScoreBox">
+        </div>
 
-            </div>
-            <div class="crystals">
-                <button class="btn"> <i class="fas fa-certificate"></i> </button> 
-                <button class="btn"> <i class="fas fa-heart"></i> </button> 
-                <button class="btn"> <i class="fas fa-star"></i> </button> 
-                <button class="btn"> <i class="fas fa-adjust"></i> </button> 
-                
-               
-            </div>
-            <div class="playerScoreBox">
-                
-            </div>
-            <div class="playerHistory">
+        <div class="rightSide">
+            <div>Losses</div>
+            <div class="losses"></div> 
+        </div>
 
-            </div>
-        </div>       
-    
+    </div>
+
+    <div class="scores">
+        <div class="scores"> Target Score: </div>
+            <div id="targetS"> </div>
+        <div class="scores"> User Score: </div>
+        <div id="userS"> </div>
+      
+
+        <div class="crystalsDisplay"></div>
+            <divc class="crystals"> </div>
+        </div>
 
         
-        <script src="assets/javascript/game.js" async defer></script>
-    </body>
+    </div>
+        
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js" async defer></script>
+</body>
+
 </html>

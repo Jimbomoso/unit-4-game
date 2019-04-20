@@ -1,12 +1,37 @@
+Click start 
+    Random targetScore number generated 
+        targetScore displayed to player
+    Random point values assigned to crystals 
+
+Click crystal 
+    Assigned point value added to playerScorebox
+    Compare targetScore and playerScore
+        if playerScore > targetScore => player loses
+            
+            communicate loss
+            add L to playerHistory
+
+        else if playerScore === targetScore => player wins
+
+            communicate win
+            add W to playerHistory
+
+        else => do nothing
+
 HTML elements
     Title
     Instructions
     Target score box
-    Buttons w/ images
-    Player Scorebox 
-    Player History
+    Icon buttons
+    Player score box
+    Player History 
 
-Start game
-    Random target score number generated 
-        Number displayed to player
-    Random point values assigned to crystals 
+CSS 
+    reset 
+    link to HTML
+    styles
+
+Javascript
+    link to HTML
+    link the jQuery
+    define variables
