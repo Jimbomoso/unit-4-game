@@ -11,7 +11,7 @@ const replay = function () {
     //resets crystals & user score    
     $(".crystals").empty();
 
-    let images = ["","","",""];
+    // let images = ["","","",""];
 
     //generates a random number between 19 and 120 for targetScore
     randomTargetScore = Math.floor(Math.random() * 120) + 19;

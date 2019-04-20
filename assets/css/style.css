@@ -12,11 +12,17 @@
     align-items: center;
 }
 
-.leftSide {
+.leftSide, .rightSide {
     display: flex;
     flex: 10%;
     height: 200px;
     background-color: blue;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.5em;
+    font-size: 24px;
 }
 
 .center {
@@ -25,24 +31,21 @@
     background: red;
 }
 
-.rightSide {
-    display: flex;
-    flex: 10%;
-    height: 200px;
-    background: blue;
-}
-
 .instructions {
+    display: flex;
     text-align: center;
+    align-content: center;
+    flex-direction: column;
     background: white;
-    height: 200px;
-    align-items: center;
+    /* height: 250px; */
+    line-height: 1.5em;
 }
 
 .scores {
-    height: 50px;
+    display: flex;
+    height: 150px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
 } 
 
@@ -68,11 +71,11 @@
 }
 
 p {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 60px;
 }
 
 h2 {
